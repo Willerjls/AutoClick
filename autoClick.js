@@ -37,6 +37,7 @@ async function autoClick() {
   }
 
   async function confirm() {
+    console.clear();
     console.log(
       `O tempo foi definido para: \x1b[34m${tempo}s.\x1b[0m\nO intervalo entre cliques foi definido para: \x1b[34m${intervalo}.\x1b[0m\nPosições do mouse definidas para: \x1b[34mX${PosX}.\x1b[0m, \x1b[34mY${PosY}.\x1b[0m\nTravar mouse: \x1b[34m${
         travarMouse.toUpperCase() === "S" ? "SIM" : "NÃO"
