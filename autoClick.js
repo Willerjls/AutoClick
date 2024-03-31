@@ -6,10 +6,13 @@ let tempo;
 let intervalo;
 let PosX;
 let PosY;
+let travarMouse;
 
 async function autoClick() {
   async function time() {
-    const T = prompt(`Digite por quanto segundos o autoClick ficara ativado: `);
+    const T = prompt(
+      `Digite por quantos segundos o autoClick ficará ativado: `
+    );
     tempo = T;
   }
 
@@ -89,7 +92,6 @@ async function autoClick() {
       // Define um intervalo para o clique automático
       setInterval(() => {
         robot.moveMouse(PosX, PosY); // Move o mouse para a coordenada
-
         robot.mouseClick(); // Simula um clique na posição atual do cursor
       }, intervalo);
     } else if (travarMouse === "n" || travarMouse === "N") {
